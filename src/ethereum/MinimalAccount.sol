@@ -17,7 +17,7 @@ import { IEntryPoint } from "lib/account-abstraction/contracts/interfaces/IEntry
                                  ERRORS
     //////////////////////////////////////////////////////////////*/
     error MinimalAccount_NotFromEntryPoint();
-    error MinimalAccount_CallFailed(result);
+    error MinimalAccount_CallFailed(bytes);
     error MinimalAccount_NotFromEntryPointOrOwner();
 
     /*//////////////////////////////////////////////////////////////
@@ -94,8 +94,7 @@ import { IEntryPoint } from "lib/account-abstraction/contracts/interfaces/IEntry
          /*//////////////////////////////////////////////////////////////
                                 GETTERS
     //////////////////////////////////////////////////////////////*/
-    function getEntryPoint() external view returns(address){
-        return address(i_entryPoint);
-    }
+
+   
     }
  }
